@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ایران‌گرد | راهنمای گردشگری ایران</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">✦</span>
+            ایران‌گرد
+        </a>
+
+        <nav class="desktop-menu">
+            <a href="#home">خانه</a>
+            <a href="#destinations">مقصدها</a>
+            <a href="#categories">دسته‌بندی</a>
+            <a href="#about">درباره ما</a>
+        </nav>
+
+        <a href="#destinations" class="nav-button">
+            کشف ایران
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">خانه</a>
+        <a href="#destinations">مقصدها</a>
+        <a href="#categories">دسته‌بندی</a>
+        <a href="#about">درباره ما</a>
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <span class="hero-badge">
+            🇮🇷 سرزمین چهار فصل
+        </span>
+
+        <h1>
+            ایران را
+            <span>کشف کن</span>
+        </h1>
+
+        <p>
+            از شهرهای تاریخی تا طبیعت بکر،
+            مقصد رویایی بعدی خودت را پیدا کن.
+        </p>
+
+        <div class="search-box">
+
+            <div class="search-input">
+                <span>🔎</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="نام شهر یا جاذبه را جستجو کنید..."
+                >
+            </div>
+
+            <button id="searchBtn">
+                جستجو
+            </button>
+
+        </div>
+
+        <div class="popular-searches">
+
+            <span>محبوب:</span>
+
+            <button data-search="شیراز">شیراز</button>
+            <button data-search="اصفهان">اصفهان</button>
+            <button data-search="کیش">کیش</button>
+            <button data-search="ماسوله">ماسوله</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="container stats-grid">
+
+        <div class="stat">
+            <strong>۳۱</strong>
+            <span>استان</span>
+        </div>
+
+        <div class="stat">
+            <strong>۱۰۰+</strong>
+            <span>جاذبه گردشگری</span>
+        </div>
+
+        <div class="stat">
+            <strong>۴</strong>
+            <span>اقلیم متفاوت</span>
+        </div>
+
+        <div class="stat">
+            <strong>۲۵۰۰+</strong>
+            <span>سال تاریخ</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section" id="categories">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="eyebrow">دسته‌بندی</span>
+                <h2>چه نوع سفری دوست داری؟</h2>
+            </div>
+
+            <p>
+                نوع جاذبه مورد علاقه خودت را انتخاب کن.
+            </p>
+
+        </div>
+
+
+        <div class="categories-grid">
+
+            <button class="category-card" data-category="تاریخی">
+
+                <div class="category-icon">🏛️</div>
+
+                <h3>تاریخی</h3>
+
+                <span>
+                    بناها و آثار تاریخی
+                </span>
+
+            </button>
+
+
+            <button class="category-card" data-category="طبیعت">
+
+                <div class="category-icon">🌿</div>
+
+                <h3>طبیعت</h3>
+
+                <span>
+                    جنگل، کوه و آبشار
+                </span>
+
+            </button>
+
+
+            <button class="category-card" data-category="ساحلی">
+
+                <div class="category-icon">🌊</div>
+
+                <h3>ساحلی</h3>
+
+                <span>
+                    دریا و جزیره
+                </span>
+
+            </button>
+
+
+            <button class="category-card" data-category="کویر">
+
+                <div class="category-icon">🏜️</div>
+
+                <h3>کویر</h3>
+
+                <span>
+                    کویرهای طلایی ایران
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DESTINATIONS ================= -->
+
+<section class="section destinations-section" id="destinations">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="eyebrow">مقاصد گردشگری</span>
+                <h2>زیباترین مقصدهای ایران</h2>
+            </div>
+
+            <p>
+                مقصد مورد علاقه خودت را پیدا کن.
+            </p>
+
+        </div>
+
+
+        <div class="filters">
+
+            <select id="provinceFilter">
+
+                <option value="all">
+                    همه استان‌ها
+                </option>
+
+                <option value="فارس">
+                    فارس
+                </option>
+
+                <option value="اصفهان">
+                    اصفهان
+                </option>
+
+                <option value="گیلان">
+                    گیلان
+                </option>
+
+                <option value="هرمزگان">
+                    هرمزگان
+                </option>
+
+                <option value="یزد">
+                    یزد
+                </option>
+
+                <option value="مازندران">
+                    مازندران
+                </option>
+
+            </select>
+
+
+            <select id="typeFilter">
+
+                <option value="all">
+                    همه جاذبه‌ها
+                </option>
+
+                <option value="تاریخی">
+                    تاریخی
+                </option>
+
+                <option value="طبیعت">
+                    طبیعت
+                </option>
+
+                <option value="ساحلی">
+                    ساحلی
+                </option>
+
+                <option value="کویر">
+                    کویر
+                </option>
+
+            </select>
+
+
+            <button id="resetBtn" class="reset-btn">
+                پاک کردن فیلتر
+            </button>
+
+        </div>
+
+
+        <div
+            class="destinations-grid"
+            id="destinationsGrid"
+        ></div>
+
+
+        <div
+            class="no-result"
+            id="noResult"
+        >
+
+            <div>😔</div>
+
+            <h3>
+                نتیجه‌ای پیدا نشد
+            </h3>
+
+            <p>
+                عبارت جستجو یا فیلترها را تغییر دهید.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="container cta-content">
+
+        <div>
+
+            <span class="eyebrow">
+                سفر بعدی تو
+            </span>
+
+            <h2>
+                ماجراجویی خودت را شروع کن
+            </h2>
+
+            <p>
+                ایران پر از داستان، فرهنگ و طبیعت‌های شگفت‌انگیز است.
+            </p>
+
+        </div>
+
+        <a
+            href="#destinations"
+            class="cta-button"
+        >
+            مشاهده مقصدها ←
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1577083552431-6e5fd01988c5?auto=format&fit=crop&w=1000&q=80"
+                alt="معماری ایرانی"
+            >
+
+            <div class="image-badge">
+
+                <strong>
+                    ایران
+                </strong>
+
+                <span>
+                    سرزمین چهار فصل
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="eyebrow">
+                درباره ایران‌گرد
+            </span>
+
+            <h2>
+                هر گوشه ایران،
+                یک داستان دارد.
+            </h2>
+
+            <p>
+                ایران‌گرد یک راهنمای گردشگری برای
+                کشف زیباترین شهرها و جاذبه‌های ایران است.
+                اینجا می‌توانی مقصد مورد علاقه خودت را
+                پیدا کنی و با زیبایی‌های ایران آشنا شوی.
+            </p>
+
+
+            <div class="about-features">
+
+                <div>
+                    <span>✓</span>
+                    معرفی مقصدهای جذاب
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    جستجو و فیلتر مقصدها
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    طراحی ساده و کاربردی
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-icon">✦</span>
+                ایران‌گرد
+            </a>
+
+            <p>
+                راهنمای کشف زیبایی‌های ایران 🇮🇷
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                دسترسی سریع
+            </h3>
+
+            <a href="#home">خانه</a>
+            <a href="#destinations">مقصدها</a>
+            <a href="#categories">دسته‌بندی</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                دسته‌بندی
+            </h3>
+
+            <a href="#destinations">تاریخی</a>
+            <a href="#destinations">طبیعت</a>
+            <a href="#destinations">ساحلی</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                ارتباط
+            </h3>
+
+            <p>
+                📧 info@irangard.ir
+            </p>
+
+            <p>
+                📍 ایران
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © ۱۴۰۵ ایران‌گرد — همه حقوق محفوظ است.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= MODAL ================= -->
+
+<div
+    class="modal"
+    id="destinationModal"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            id="modalClose"
+        >
+            ×
+        </button>
+
+
+        <img
+            id="modalImage"
+            src=""
+            alt=""
+        >
+
+
+        <div class="modal-body">
+
+            <span
+                class="modal-type"
+                id="modalType"
+            ></span>
+
+            <h2 id="modalTitle"></h2>
+
+            <p
+                class="modal-location"
+                id="modalLocation"
+            ></p>
+
+            <p id="modalDescription"></p>
+
+
+            <div class="modal-info">
+
+                <div>
+                    <span>📍</span>
+                    <strong id="modalProvince"></strong>
+                </div>
+
+                <div>
+                    <span>⭐</span>
+                    <strong id="modalRating"></strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
