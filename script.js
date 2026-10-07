@@ -1,668 +1,257 @@
-/* =========================================
-   اطلاعات مقصدهای ایران
-========================================= */
-
 const destinations = [
-    {
-        id: 1,
-        title: "تخت جمشید",
-        city: "مرودشت",
-        province: "فارس",
-        type: "تاریخی",
-        rating: "4.9",
-        description:
-            "یکی از باشکوه‌ترین آثار تاریخی ایران و یادگار تمدن هخامنشی.",
-        image:
-            "https://images.unsplash.com/photo-1592287104445-9e5a0b6f0d6f?auto=format&fit=crop&w=900&q=80"
-    },
-
-    {
-        id: 2,
-        title: "سی‌وسه پل",
-        city: "اصفهان",
-        province: "اصفهان",
-        type: "تاریخی",
-        rating: "4.8",
-        description:
-            "یکی از مشهورترین پل‌های تاریخی ایران در قلب شهر اصفهان.",
-        image:
-            "https://images.unsplash.com/photo-1578912996078-305d92249aa6?auto=format&fit=crop&w=900&q=80"
-    },
-
-    {
-        id: 3,
-        title: "ماسوله",
-        city: "فومن",
-        province: "گیلان",
-        type: "طبیعت",
-        rating: "4.9",
-        description:
-            "روستایی پلکانی و زیبا در میان کوه‌ها و جنگل‌های سرسبز گیلان.",
-        image:
-            "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
-    },
-
-    {
-        id: 4,
-        title: "جزیره کیش",
-        city: "کیش",
-        province: "هرمزگان",
-        type: "ساحلی",
-        rating: "4.7",
-        description:
-            "جزیره‌ای زیبا با سواحل آرام، آب‌های نیلگون و تفریحات متنوع.",
-        image:
-            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
-    },
-
-    {
-        id: 5,
-        title: "کویر لوت",
-        city: "شهداد",
-        province: "کرمان",
-        type: "کویر",
-        rating: "4.9",
-        description:
-            "یکی از شگفت‌انگیزترین مناطق کویری ایران با چشم‌اندازهای بی‌نظیر.",
-        image:
-            "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
-    },
-
-    {
-        id: 6,
-        title: "یزد",
-        city: "یزد",
-        province: "یزد",
-        type: "تاریخی",
-        rating: "4.8",
-        description:
-            "شهری تاریخی با معماری خشتی، بادگیرها و کوچه‌های قدیمی.",
-        image:
-            "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80"
-    },
-
-    {
-        id: 7,
-        title: "جنگل‌های مازندران",
-        city: "مازندران",
-        province: "مازندران",
-        type: "طبیعت",
-        rating: "4.8",
-        description:
-            "جنگل‌های سرسبز و چشم‌اندازهای زیبای شمال ایران.",
-        image:
-            "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80"
-    },
-
-    {
-        id: 8,
-        title: "شیراز",
-        city: "شیراز",
-        province: "فارس",
-        type: "تاریخی",
-        rating: "4.9",
-        description:
-            "شهر شعر و ادب، باغ‌های زیبا و بناهای تاریخی ارزشمند.",
-        image:
-            "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=80"
-    }
+  {
+    id: 1,
+    name: "تخت جمشید",
+    city: "مرودشت",
+    province: "فارس",
+    type: "تاریخی",
+    image: "https://images.unsplash.com/photo-1592287104445-9e5a0b6f0d6f?auto=format&fit=crop&w=900&q=80",
+    description: "شکوه تمدن هخامنشی و یکی از مهم‌ترین آثار تاریخی ایران."
+  },
+  {
+    id: 2,
+    name: "سی‌وسه پل",
+    city: "اصفهان",
+    province: "اصفهان",
+    type: "تاریخی",
+    image: "https://images.unsplash.com/photo-1578912996078-305d92249aa6?auto=format&fit=crop&w=900&q=80",
+    description: "پل تاریخی و نمادین اصفهان بر فراز زاینده‌رود."
+  },
+  {
+    id: 3,
+    name: "ماسوله",
+    city: "فومن",
+    province: "گیلان",
+    type: "طبیعت",
+    image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80",
+    description: "روستایی پلکانی در دل طبیعت سرسبز گیلان."
+  },
+  {
+    id: 4,
+    name: "جزیره کیش",
+    city: "کیش",
+    province: "هرمزگان",
+    type: "ساحلی",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80",
+    description: "جزیره‌ای زیبا با ساحل، دریا و تفریحات متنوع."
+  },
+  {
+    id: 5,
+    name: "کویر لوت",
+    city: "شهداد",
+    province: "کرمان",
+    type: "کویر",
+    image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80",
+    description: "سرزمینی شگفت‌انگیز برای تماشای سکوت کویر و آسمان پرستاره."
+  },
+  {
+    id: 6,
+    name: "یزد",
+    city: "یزد",
+    province: "یزد",
+    type: "تاریخی",
+    image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80",
+    description: "شهر بادگیرها، کوچه‌های خشتی و معماری اصیل ایرانی."
+  },
+  {
+    id: 7,
+    name: "جنگل‌های مازندران",
+    city: "مازندران",
+    province: "مازندران",
+    type: "طبیعت",
+    image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80",
+    description: "جنگل‌های سرسبز شمال برای تجربه آرامش و هوای پاک."
+  },
+  {
+    id: 8,
+    name: "شیراز",
+    city: "شیراز",
+    province: "فارس",
+    type: "تاریخی",
+    image: "images/shiraz.png",
+    description: "شهر شعر و باغ‌ها؛ سرشار از تاریخ، فرهنگ و معماری ایرانی."
+  }
 ];
 
+const grid = document.getElementById("destinationsGrid");
+const emptyState = document.getElementById("emptyState");
+const searchInput = document.getElementById("searchInput");
+const searchForm = document.getElementById("searchForm");
+const modal = document.getElementById("destinationModal");
+const modalImage = document.getElementById("modalImage");
+const modalTitle = document.getElementById("modalTitle");
+const modalType = document.getElementById("modalType");
+const modalLocation = document.getElementById("modalLocation");
+const modalDescription = document.getElementById("modalDescription");
+const modalFavorite = document.getElementById("modalFavorite");
 
-/* =========================================
-   انتخاب عناصر صفحه
-========================================= */
+let currentFilter = "همه";
+let currentDestination = null;
+let favorites = JSON.parse(localStorage.getItem("iranGardFavorites") || "[]");
 
-const grid =
-    document.getElementById("destinationsGrid");
-
-const searchInput =
-    document.getElementById("searchInput");
-
-const searchBtn =
-    document.getElementById("searchBtn");
-
-const provinceFilter =
-    document.getElementById("provinceFilter");
-
-const typeFilter =
-    document.getElementById("typeFilter");
-
-const resetBtn =
-    document.getElementById("resetBtn");
-
-const noResult =
-    document.getElementById("noResult");
-
-const modal =
-    document.getElementById("destinationModal");
-
-const modalClose =
-    document.getElementById("modalClose");
-
-const mobileMenu =
-    document.getElementById("mobileMenu");
-
-const menuBtn =
-    document.getElementById("menuBtn");
-
-
-/* =========================================
-   ذخیره علاقه‌مندی‌ها
-========================================= */
-
-let favorites =
-    JSON.parse(
-        localStorage.getItem("iranGardFavorites")
-    ) || [];
-
-
-/* =========================================
-   نمایش مقصدها
-========================================= */
-
-function renderDestinations(list) {
-
-    grid.innerHTML = "";
-
-    if (list.length === 0) {
-
-        noResult.style.display = "block";
-
-        return;
-    }
-
-    noResult.style.display = "none";
-
-
-    list.forEach((destination, index) => {
-
-        const isFavorite =
-            favorites.includes(destination.id);
-
-
-        const card =
-            document.createElement("article");
-
-        card.className = "destination-card";
-
-        card.style.animationDelay =
-            `${index * 0.05}s`;
-
-
-        card.innerHTML = `
-
-            <div class="card-image">
-
-                <img
-                    src="${destination.image}"
-                    alt="${destination.title}"
-                    loading="lazy"
-                >
-
-                <span class="card-type">
-                    ${destination.type}
-                </span>
-
-                <button
-                    class="favorite ${isFavorite ? "active" : ""}"
-                    data-id="${destination.id}"
-                    aria-label="افزودن به علاقه‌مندی"
-                >
-                    ${isFavorite ? "♥" : "♡"}
-                </button>
-
-            </div>
-
-
-            <div class="card-content">
-
-                <h3>
-                    ${destination.title}
-                </h3>
-
-                <div class="location">
-                    📍 ${destination.city}، ${destination.province}
-                </div>
-
-                <p class="description">
-                    ${destination.description}
-                </p>
-
-                <div class="card-bottom">
-
-                    <span class="rating">
-                        ⭐ ${destination.rating}
-                    </span>
-
-                    <button
-                        class="more-btn"
-                        data-id="${destination.id}"
-                    >
-                        جزئیات
-                    </button>
-
-                </div>
-
-            </div>
-        `;
-
-
-        grid.appendChild(card);
-
-    });
+function isFavorite(id) {
+  return favorites.includes(id);
 }
 
-
-/* =========================================
-   فیلتر مقصدها
-========================================= */
-
-function filterDestinations() {
-
-    const search =
-        searchInput.value
-            .trim()
-            .toLowerCase();
-
-
-    const province =
-        provinceFilter.value;
-
-
-    const type =
-        typeFilter.value;
-
-
-    const filtered =
-        destinations.filter(destination => {
-
-            const searchableText = `
-                ${destination.title}
-                ${destination.city}
-                ${destination.province}
-                ${destination.type}
-                ${destination.description}
-            `.toLowerCase();
-
-
-            const matchesSearch =
-                searchableText.includes(search);
-
-
-            const matchesProvince =
-                province === "all" ||
-                destination.province === province;
-
-
-            const matchesType =
-                type === "all" ||
-                destination.type === type;
-
-
-            return (
-                matchesSearch &&
-                matchesProvince &&
-                matchesType
-            );
-        });
-
-
-    renderDestinations(filtered);
+function toggleFavorite(id) {
+  if (isFavorite(id)) {
+    favorites = favorites.filter(item => item !== id);
+  } else {
+    favorites.push(id);
+  }
+  localStorage.setItem("iranGardFavorites", JSON.stringify(favorites));
+  renderDestinations();
+  updateModalFavorite();
 }
 
+function renderDestinations(list = destinations) {
+  const filtered = list.filter(destination => {
+    return currentFilter === "همه" || destination.type === currentFilter;
+  });
 
-/* =========================================
-   جستجوی لحظه‌ای
-========================================= */
+  grid.innerHTML = "";
 
-searchInput.addEventListener(
-    "input",
-    filterDestinations
-);
+  if (!filtered.length) {
+    emptyState.hidden = false;
+    return;
+  }
 
+  emptyState.hidden = true;
 
-/* =========================================
-   دکمه جستجو
-========================================= */
+  filtered.forEach(destination => {
+    const card = document.createElement("article");
+    card.className = "destination-card";
 
-searchBtn.addEventListener(
-    "click",
-    () => {
+    card.innerHTML = `
+      <div class="card-image">
+        <img src="${destination.image}" alt="${destination.name}" loading="lazy">
+        <button class="favorite-btn ${isFavorite(destination.id) ? "active" : ""}" type="button"
+          data-favorite="${destination.id}" aria-label="علاقه‌مندی">
+          ${isFavorite(destination.id) ? "♥" : "♡"}
+        </button>
+        <span class="card-type">${destination.type}</span>
+      </div>
+      <div class="card-body">
+        <h3>${destination.name}</h3>
+        <div class="card-location">📍 ${destination.city}، ${destination.province}</div>
+        <p class="card-description">${destination.description}</p>
+        <button class="card-link" type="button" data-open="${destination.id}">مشاهده جزئیات ←</button>
+      </div>
+    `;
 
-        filterDestinations();
+    grid.appendChild(card);
+  });
 
-        document
-            .getElementById("destinations")
-            .scrollIntoView({
-                behavior: "smooth"
-            });
-
-    }
-);
-
-
-/* =========================================
-   فیلتر استان
-========================================= */
-
-provinceFilter.addEventListener(
-    "change",
-    filterDestinations
-);
-
-
-/* =========================================
-   فیلتر نوع جاذبه
-========================================= */
-
-typeFilter.addEventListener(
-    "change",
-    filterDestinations
-);
-
-
-/* =========================================
-   پاک کردن فیلترها
-========================================= */
-
-resetBtn.addEventListener(
-    "click",
-    () => {
-
-        searchInput.value = "";
-
-        provinceFilter.value = "all";
-
-        typeFilter.value = "all";
-
-        renderDestinations(destinations);
-
-    }
-);
-
-
-/* =========================================
-   جستجوهای محبوب
-========================================= */
-
-document
-    .querySelectorAll("[data-search]")
-    .forEach(button => {
-
-        button.addEventListener(
-            "click",
-            () => {
-
-                searchInput.value =
-                    button.dataset.search;
-
-                filterDestinations();
-
-                document
-                    .getElementById("destinations")
-                    .scrollIntoView({
-                        behavior: "smooth"
-                    });
-
-            }
-        );
-
+  grid.querySelectorAll("[data-favorite]").forEach(button => {
+    button.addEventListener("click", event => {
+      event.stopPropagation();
+      toggleFavorite(Number(button.dataset.favorite));
     });
+  });
 
-
-/* =========================================
-   دسته‌بندی‌ها
-========================================= */
-
-document
-    .querySelectorAll(".category-card")
-    .forEach(button => {
-
-        button.addEventListener(
-            "click",
-            () => {
-
-                const category =
-                    button.dataset.category;
-
-
-                typeFilter.value =
-                    category;
-
-
-                filterDestinations();
-
-
-                document
-                    .getElementById("destinations")
-                    .scrollIntoView({
-                        behavior: "smooth"
-                    });
-
-            }
-        );
-
-    });
-
-
-/* =========================================
-   کلیک روی کارت‌ها
-========================================= */
-
-grid.addEventListener(
-    "click",
-    event => {
-
-        /* علاقه‌مندی */
-
-        const favoriteButton =
-            event.target.closest(".favorite");
-
-
-        if (favoriteButton) {
-
-            const id =
-                Number(
-                    favoriteButton.dataset.id
-                );
-
-
-            if (favorites.includes(id)) {
-
-                favorites =
-                    favorites.filter(
-                        favoriteId =>
-                            favoriteId !== id
-                    );
-
-            } else {
-
-                favorites.push(id);
-
-            }
-
-
-            localStorage.setItem(
-                "iranGardFavorites",
-                JSON.stringify(favorites)
-            );
-
-
-            filterDestinations();
-
-            return;
-        }
-
-
-        /* جزئیات */
-
-        const moreButton =
-            event.target.closest(".more-btn");
-
-
-        if (moreButton) {
-
-            const id =
-                Number(
-                    moreButton.dataset.id
-                );
-
-
-            openModal(id);
-        }
-
-    }
-);
-
-
-/* =========================================
-   باز کردن Modal
-========================================= */
+  grid.querySelectorAll("[data-open]").forEach(button => {
+    button.addEventListener("click", () => openModal(Number(button.dataset.open)));
+  });
+}
 
 function openModal(id) {
+  currentDestination = destinations.find(destination => destination.id === id);
+  if (!currentDestination) return;
 
-    const destination =
-        destinations.find(
-            item => item.id === id
-        );
+  modalImage.src = currentDestination.image;
+  modalImage.alt = currentDestination.name;
+  modalTitle.textContent = currentDestination.name;
+  modalType.textContent = currentDestination.type;
+  modalLocation.textContent = `📍 ${currentDestination.city}، ${currentDestination.province}`;
+  modalDescription.textContent = currentDestination.description;
 
-
-    if (!destination) {
-        return;
-    }
-
-
-    document.getElementById(
-        "modalImage"
-    ).src = destination.image;
-
-
-    document.getElementById(
-        "modalImage"
-    ).alt = destination.title;
-
-
-    document.getElementById(
-        "modalTitle"
-    ).textContent = destination.title;
-
-
-    document.getElementById(
-        "modalType"
-    ).textContent = destination.type;
-
-
-    document.getElementById(
-        "modalLocation"
-    ).textContent =
-        `📍 ${destination.city}`;
-
-
-    document.getElementById(
-        "modalDescription"
-    ).textContent =
-        destination.description;
-
-
-    document.getElementById(
-        "modalProvince"
-    ).textContent =
-        destination.province;
-
-
-    document.getElementById(
-        "modalRating"
-    ).textContent =
-        destination.rating;
-
-
-    modal.classList.add("show");
-
-    document.body.style.overflow = "hidden";
+  updateModalFavorite();
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
 }
-
-
-/* =========================================
-   بستن Modal
-========================================= */
 
 function closeModal() {
-
-    modal.classList.remove("show");
-
-    document.body.style.overflow = "";
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
 }
 
+function updateModalFavorite() {
+  if (!currentDestination) return;
+  modalFavorite.textContent = isFavorite(currentDestination.id)
+    ? "♥ حذف از علاقه‌مندی‌ها"
+    : "♡ افزودن به علاقه‌مندی‌ها";
+}
 
-modalClose.addEventListener(
-    "click",
-    closeModal
-);
+function applySearch(query) {
+  const value = query.trim().toLowerCase();
 
+  if (!value) {
+    renderDestinations();
+    return;
+  }
 
-/* کلیک بیرون Modal */
+  const results = destinations.filter(destination =>
+    [destination.name, destination.city, destination.province, destination.type]
+      .some(text => text.toLowerCase().includes(value))
+  );
 
-modal.addEventListener(
-    "click",
-    event => {
+  renderDestinations(results);
+  document.getElementById("destinations").scrollIntoView({ behavior: "smooth" });
+}
 
-        if (event.target === modal) {
-            closeModal();
-        }
+document.querySelectorAll(".filter").forEach(button => {
+  button.addEventListener("click", () => {
+    currentFilter = button.dataset.filter;
+    document.querySelectorAll(".filter").forEach(item => item.classList.remove("active"));
+    button.classList.add("active");
+    renderDestinations();
+  });
+});
 
-    }
-);
-
-
-/* دکمه Escape */
-
-document.addEventListener(
-    "keydown",
-    event => {
-
-        if (event.key === "Escape") {
-            closeModal();
-        }
-
-    }
-);
-
-
-/* =========================================
-   منوی موبایل
-========================================= */
-
-menuBtn.addEventListener(
-    "click",
-    () => {
-
-        mobileMenu.classList.toggle("show");
-
-    }
-);
-
-
-/* بستن منوی موبایل هنگام انتخاب لینک */
-
-document
-    .querySelectorAll(".mobile-menu a")
-    .forEach(link => {
-
-        link.addEventListener(
-            "click",
-            () => {
-
-                mobileMenu.classList.remove("show");
-
-            }
-        );
-
+document.querySelectorAll(".category-card").forEach(button => {
+  button.addEventListener("click", () => {
+    currentFilter = button.dataset.filter;
+    document.querySelectorAll(".filter").forEach(item => {
+      item.classList.toggle("active", item.dataset.filter === currentFilter);
     });
+    renderDestinations();
+    document.getElementById("destinations").scrollIntoView({ behavior: "smooth" });
+  });
+});
 
+document.querySelectorAll("[data-search]").forEach(button => {
+  button.addEventListener("click", () => {
+    searchInput.value = button.dataset.search;
+    applySearch(button.dataset.search);
+  });
+});
 
-/* =========================================
-   اجرای اولیه سایت
-========================================= */
+searchForm.addEventListener("submit", event => {
+  event.preventDefault();
+  applySearch(searchInput.value);
+});
 
-renderDestinations(destinations);
+document.getElementById("modalClose").addEventListener("click", closeModal);
+document.getElementById("modalBackdrop").addEventListener("click", closeModal);
+modalFavorite.addEventListener("click", () => {
+  if (currentDestination) toggleFavorite(currentDestination.id);
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeModal();
+});
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => navLinks.classList.remove("open"));
+});
+
+renderDestinations();
